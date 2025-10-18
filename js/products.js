@@ -12,7 +12,7 @@ if (productID != null) {
             <section id="app_product_append">
                 <div class="app_light_img"> 
                     <img src="./gallary/${pageJson[i].id}/${pageJson[i].photo}" alt="${pageJson[i].desc}">
-                    <button>Buy</button>
+                    <button onclick="callWhatsApp(this)">Buy</button>
                 </div>
 
                 <div class="app_light_contents">
@@ -44,4 +44,14 @@ if (productID != null) {
 
    $("#app_main").html(appProducts)
    document.getElementById("app_main").scrollIntoView()
+}
+
+// 
+function callWhatsApp(x) {
+    // 
+    let product = x.parentElement.parentElement.parentElement
+    let productID = product.getElementsByClassName("app_page_header")[0]
+
+    let textMsg = "Hey, am interested in buying "+productID.innerText
+    location = `https://wa.me/${myWhatsApp}?text=${textMsg}`
 }
