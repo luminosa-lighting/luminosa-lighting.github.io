@@ -4,7 +4,7 @@ $(document).ready(()=>{
 
 // 
 const myEmail = "luminosalighting2@gmail.com"
-const myWhatsApp = "+44 7861412255"
+const myWhatsApp = "+447861412255"
 
 // 
 let pageJson = ""
@@ -60,4 +60,5 @@ if (lights != null) {
 
 // 
 $("#email_container").html(`<b>Email: </b> ${myEmail}`);
+
 $("#whatsapp_container").html(`<b>WhatsApp: </b> ${myWhatsApp}`);
