@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Luminosa - Your Lighting Experts</title>
+    <script src="./js/jquery.3.7.0.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./">
+                <img id="desktop_icons" src="./icons/logo1.png" alt="Luminosa Lighting">
+                <img id="mobile_icons" src="./icons/favicon.png" alt="Luminosa Lighting">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="./?page=wall_lights">Wall Lights</a></li>
+                        <li><a href="./?page=ceiling_lights">Ceiling Lights</a></li>
+                        <li><a href="./?page=chandeliers">Chandeliers</a></li>
+                        <li><a href="./?page=cluster_lights">Cluster Lights</a></li>
+                        <li><a href="./?page=floor_lights">Floor Lamps</a></li>
+                        <li><a href="./?page=pendant_lights">Pendant Lights</a></li>
+                        <li><a href="./?page=table_lights">Table Lamps</a></li>
+                    </ul>
+                </li>
+                <li><a href="./?contact=about_us">About Us</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="apploader"><img src="./icons/favicon.png" alt="loading ..."></div>
+
+    <main id="app_main">
+
+        <section id="hero">
+            <h1>Illuminate Your Space</h1>
+            <p>Discover our exquisite collection of modern and classic lighting solutions.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </section>
+
+        <section id="products">
+            <h2>Our Lighting Categories</h2>
+            <div class="category-grid">
+                <article class="category-card wall_lights">
+                    <h3>Wall Lights</h3>
+                    <p>Perfect accent lighting for any room.</p>
+                    <a href="./?page=wall_lights">View Collection</a>
+                </article>
+
+                <article class="category-card pendant_lights">
+                    <h3>Pendant Lights</h3>
+                    <p>Hanging designs for above islands and tables.</p>
+                    <a href="./?page=pendant_lights">View Collection</a>
+                </article>
+
+                <article class="category-card chandelier_lights">
+                    <h3>Chandeliers</h3>
+                    <p>Elegant centerpieces for grand spaces.</p>
+                    <a href="./page=chandelier">View Collection</a>
+                </article>
+                </div>
+        </section>
+        
+        <section id="about-section">
+            <h2>About Luminosa</h2>
+            <p>We are dedicated to brightening your home with high-quality, beautifully designed lights. Our passion lies in the perfect fusion of form and function. Founded in 1989, Luminosa has been providing exceptional lighting solutions across the globe. </p>
+            <a href="./?contact=about_us">Read Our Full Story</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contact</h3>
+                <p id="email_container">Email: info@luminosa.com</p>
+                <p id="whatsapp_container">Phone: +1 (555) LIGHT</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <!-- <li><a href="#">Sale</a></li> -->
+                    <li><a href="./?contact=about_us">About Us</a></li>
+                    <!-- <li><a href="#">Shipping & Returns</a></li> -->
+                    <!-- <li><a href="#">Privacy Policy</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-pinterest"></i></a> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <img src="./icons/favicon.png" alt="Luminosa Lighting">
+            <span>&copy; 2025 Luminosa Lighting. All rights reserved.</span>
+        </div>
+    </footer>
+
+<script src="./js/index.js"></script>
+<script src="./js/products.js"></script>
+<script src="./js/contact.js"></script>
+</body>
+</html>

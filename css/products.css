@@ -1,0 +1,106 @@
+#app_product_append{
+    display: flex;
+    gap: 2rem;
+}
+
+.app_light_img{
+    width: 40%;
+}
+
+.app_light_img button{
+    display: flex;
+    margin: 1rem auto;
+    background-color: rgba(0, 100, 0, 0.8);
+    color: white;
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+}
+
+.app_light_img button:hover{
+   background-color: rgba(0, 100, 0, 1); 
+}
+
+.app_light_img img{
+    width: 100%;
+}
+
+.app_light_contents{
+    width: 60%;
+}
+
+.app_light_contents h2{
+    color: gray;
+    text-align: center;
+}
+
+.app_light_contents span{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 0.3rem 2rem;
+    /* margin: 1rem 0rem; */
+}
+
+.app_light_contents h3{
+    color: #D71208;
+    margin-top: 1rem;
+}
+
+.product_details_paragraph{
+    text-align: justify;
+    line-height: 2;
+}
+
+.app_light_contents ul li{
+    margin-left: 2rem;
+}
+
+/*  */
+@media (max-width:1030px) {
+    #app_product_append{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .app_light_img, .app_light_contents{
+        width: 100%;
+        font-size: larger;
+    }
+
+    .app_light_img img{
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .app_light_contents h2{
+        font-size: 2rem;
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    .app_light_contents h3{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:650px) {
+    .app_light_img img{
+        width: 100%;
+    }
+
+    .app_light_contents h2{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:500px) {
+    .app_light_img, .app_light_contents{
+        font-size: 0.9rem;
+    }
+
+    .app_light_contents h2{
+        font-size: 1.5rem;
+    }
+}
