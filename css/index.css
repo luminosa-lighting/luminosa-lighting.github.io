@@ -536,6 +536,10 @@ footer {
         gap: 1rem;
     }
 
+    #photo_slide_container h2{
+        margin-top: 3rem;
+    }
+
     #photo_slide_container ul li img{
         width: 70%;
         height: auto;
@@ -671,4 +675,3 @@ footer {
         margin-bottom: 10rem;
     }
 }
-
