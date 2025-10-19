@@ -596,6 +596,7 @@ footer {
 
     #hero{
         font-size: smaller;
+        height: 42dvh;
     }
 
     h1 {
@@ -634,13 +635,13 @@ footer {
     }
 
     #hero{
-        font-size: smaller;
         padding: 20px;
+        height: 45dvh;
     }
 
     h1 {
         font-size: 1.8em;
-        margin-bottom: 8rem;
+        margin-bottom: 9rem;
     }
 
     .category-card {
@@ -657,5 +658,16 @@ footer {
 
     #photo_slide_container ul li img{
         width: 100%;
+    }
+}
+
+@media (max-width:360px) {
+    #hero{
+        padding: 15px;
+        height: 50dvh;
+    }
+
+    h1 {
+        margin-bottom: 10rem;
     }
 }
