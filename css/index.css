@@ -661,7 +661,7 @@ footer {
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:330px) {
     #hero{
         padding: 15px;
         height: 50dvh;
@@ -671,3 +671,4 @@ footer {
         margin-bottom: 10rem;
     }
 }
+
