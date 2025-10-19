@@ -59,6 +59,42 @@ if (lights != null) {
 }
 
 // 
-$("#email_container").html(`<b>Email: </b> ${myEmail}`);
+$.get('./json/slides.json', (res)=>{
+    let slidePage = "";
 
+    for (let i = 0; i < res.length; i++) {
+
+        let txt = res[i].desc
+
+        let textMsg = "Hey, am interested in buying "+txt.toUpperCase()
+        
+       slidePage += `
+        <li>
+            <h4>${res[i].desc}</h4>
+            <img src="./gallary/slides/${res[i].photo}" alt="${res[i].desc}" laoding="lazy">
+            <div> <span>${currency}${res[i].price}</span> | <a href="https://wa.me/${myWhatsApp}?text=${textMsg}">Buy</a> </div>
+        </li>
+       ` 
+    }
+
+    $("#photo_slide_container").html(`
+        <h2>Products Gallary</h2>
+        <ul>${slidePage}</ul>
+    `)
+
+    return
+
+    const data = res; // Your full dataset
+    const itemsPerPage = 10;
+    let currentPage = 1;
+
+    const startIndex = (res.length - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageData = data.slice(startIndex, endIndex);
+
+    $("#photo_slide_container").html(pageData)
+})
+
+// 
+$("#email_container").html(`<b>Email: </b> ${myEmail}`);
 $("#whatsapp_container").html(`<b>WhatsApp: </b> ${myWhatsApp}`);
